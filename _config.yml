@@ -1,9 +1,0 @@
-title: My Awesome Site
-description: A description of my awesome site.
-url: "https://notify.naturelye.com"
-baseurl: ""
-
-theme: jekyll-theme-minimal
-
-permalink: pretty
-paginate: 10
