@@ -1,0 +1,22 @@
+---
+layout: default
+title: Content Page
+---
+
+
+<div id="content"></div>
+
+<script>
+  fetch('/assets/content.json')
+    .then(response => response.json())
+    .then(data => {
+      const contentDiv = document.getElementById('content');
+      contentDiv.innerHTML = `
+        <h2>${data.title}</h2>
+        <p>${data.description}</p>
+      `;
+    })
+    .catch(error => {
+      console.error('Error loading content.json:', error);
+    });
+</script>
